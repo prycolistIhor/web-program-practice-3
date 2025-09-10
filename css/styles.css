@@ -1,7 +1,18 @@
+@font-face {
+  font-family: 'Figtree';
+  src: url('../assets/fonts/Figtree-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
 
-/* Загальні стилі */
+@font-face {
+  font-family: 'Figtree';
+  src: url('../assets/fonts/Figtree-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 500;
   background-color: #f4d595;
   display: flex;
   justify-content: center;
@@ -10,7 +21,6 @@ body {
   margin: 0;
 }
 
-/* Картка */
 .card {
   background: #fff;
   width: 320px;
@@ -22,11 +32,12 @@ body {
 }
 
 .card-image {
-  width: 100%;
   display: block;
+  width: calc(100% - 32px);
+  margin: 16px;
+  border-radius: 12px;
 }
 
-/* Тіло картки */
 .card-body {
   padding: 16px;
 }
@@ -65,7 +76,6 @@ body {
   color: #000;
 }
 
-/* Футер */
 .card-footer {
   display: flex;
   align-items: center;
@@ -84,4 +94,11 @@ body {
   font-size: 14px;
   font-weight: bold;
   color: #333;
+}
+
+.title,
+.tag,
+.author,
+.highlight {
+  font-weight: 800; /* ExtraBold */
 }
